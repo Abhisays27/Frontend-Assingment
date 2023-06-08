@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Montserrat:wght@200&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    
-    
-    
+
+
+
 }
 
 
@@ -14,16 +14,16 @@ nav {
     background-color: #272424;
     color: #fff;
     height: 40px;
-  }
+}
 
-  nav h1 {
+nav h1 {
     margin-left: 18px;
     padding: 0;
     font-size: 20px;
     line-height: 40px;
     font-family: 'Baloo Bhaina 2', cursive;
-  }
-  
+}
+
 
 .container {
     display: flex;
@@ -33,106 +33,117 @@ nav {
     max-width: 600px;
     margin: 10px auto;
 
-    
-  }
-  #container1{
-    height: 60vh;
-    
-  
-   
 
-  }
-  #container2{
-    height: 60vh;
-   
-  
+}
 
-  }
-  .space{
+#container1 {
+    height: 60vh;
+
+
+
+
+}
+
+#container2 {
+    height: 60vh;
+
+
+
+}
+
+.space {
     padding: 10px;
-  }
-  .drop-container {
+}
+
+.drop-container {
     width: 200px;
     padding: 10px;
-    
+
     border: 2px solid #ccc;
     border-radius: 5px;
     margin: 30px;
     outline: 2px dashed #aaa;
     transition: border-color 0.3s ease;
-  }
-  .drop-container.dragging-over {
-    border-color: #aaa;
-  }
+}
 
-  p#text1.draggable-item{
+.drop-container.dragging-over {
+    border-color: #aaa;
+}
+
+p#text1.draggable-item {
 
     width: 80px;
     height: 40px;
-  }
-  
-  .draggable-item {
+}
+
+.draggable-item {
     width: 80px;
     height: 80px;
     margin-bottom: 10px;
     margin: 5px;
     transition: transform 0.3s ease;
     cursor: pointer;
-  }
-  .draggable-item.dragging {
+}
+
+.draggable-item.dragging {
     transform: scale(1.1);
-  }
-  
-  
-  #success-message {
+}
+
+
+#success-message {
     margin-top: 10px;
     font-size: 12px;
     font-weight: 500;
     color: green;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
+    /* Initially hidden */
     transition: opacity 0.3s ease;
-    
-  }
-  
-  
-  button {
+
+}
+
+
+button {
     margin-top: 10px;
-    
-  }
-  
-  #reset-button {
-    
-      display: block;
-      cursor: pointer;
-      margin: -15px auto;
-      font-size:15px;
-  font-family:Times New Roman;
-  width:80px;
-  height:30px;
-  border-width:1px;
-  color:#fff;
-  border-color:#599bb3;
-  font-weight:bold;
-  border-top-left-radius:8px;
-  border-top-right-radius:8px;
-  border-bottom-left-radius:8px;
-  border-bottom-right-radius:8px;
-  box-shadow: 0px 11px 14px -7px #276873;
-  text-shadow: 0px 1px 30px #3d768a;
-  background:#2991b7;
-  }
-  @keyframes bounce {
+
+}
+
+#reset-button {
+
+    display: block;
+    cursor: pointer;
+    margin: -15px auto;
+    font-size: 15px;
+    font-family: Times New Roman;
+    width: 80px;
+    height: 30px;
+    border-width: 1px;
+    color: #fff;
+    border-color: #599bb3;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 11px 14px -7px #276873;
+    text-shadow: 0px 1px 30px #3d768a;
+    background: #2991b7;
+}
+/* Animation */
+@keyframes bounce {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
+
     50% {
-      transform: scale(1.1);
+        transform: scale(1.1);
     }
+
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  #add-items-message {
+}
+
+#add-items-message {
     display: block;
     text-align: center;
     margin-top: 96px;
@@ -140,15 +151,84 @@ nav {
     animation: bounce 1.5s infinite;
     font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  
-  
-  h2{
+}
+
+
+
+h2 {
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     text-align: center;
-    
-  }
-  
+
+}
+
+/*Responsive*/
+
+@media (max-width: 700px) {
+
+    #container1,
+    #container2 {
+        margin: 30px auto;
+        height: 40vh;
+
+    }
+
+    #reset-button {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #container1,
+    #container2 {
+        margin: 20px auto;
+        padding: auto;
+
+        width: 40%;
+        max-width: 300px;
+
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    nav h1 {
+        font-size: 18px;
+    }
+
+
+
+}
+
+/* so that the message dosent come in larger screen */
+
+
+@media (max-width: 940px) {
+    .mobile-instructions {
+        position: fixed;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        padding: 10px;
+        z-index: 9999;
+        display: block;
+    }
+
+    .mobile-instructions p {
+        margin: 0;
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 700px) {
+    .mobile-instructions {
+        display: none;
+    }
+}

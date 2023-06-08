@@ -1,31 +1,60 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Drag and Drop</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <nav>
-        <h1>Drag&Drop.com</h1>
-      </nav>
-  <div class="container">
-    <div id="container1" class="drop-container">
-      <h2>Draggable Items</h2>
-      <div class="space"></div>
-      
-      <img id="item1" class="draggable-item" src="item1.png" draggable="true">
-      <img id="item2" class="draggable-item" src="item2.png" draggable="true">
-      <img id="item3" class="draggable-item" src="item3.png" draggable="true">
-      <p id="text1" class="draggable-item" draggable="true">Sample Text</p>
-   
-    </div>
-    <div id="container2" class="drop-container">
-      <h2>Droppable Area</h2>
-      <div id="add-items-message">Add Items here</div>
-      <div id="success-message">Item Dragged Sucsessfully!</div>
-    </div>
-  </div>
-  <button id="reset-button">Reset</button>
-  <script src="script.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <html>
+      <head>
+        <title>Drag and Drop</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+      </head>
+      <body>
+        <nav>
+          <h1>Drag&Drop.com</h1>
+        </nav>
+        <div id="mobile-instructions" class="mobile-instructions">
+          <p>**Tap an item and then tap the droppable area**</p>
+        </div>
+        <div class="container">
+          <div id="container1" class="drop-container">
+            <h2>Draggable Items</h2>
+            <div class="space"></div>
+
+            <img
+              id="item1"
+              class="draggable-item"
+              src="item1.png"
+              draggable="true"
+            />
+            <img
+              id="item2"
+              class="draggable-item"
+              src="item2.png"
+              draggable="true"
+            />
+            <img
+              id="item3"
+              class="draggable-item"
+              src="item3.png"
+              draggable="true"
+            />
+            <p id="text1" class="draggable-item" draggable="true">
+              Sample Text
+            </p>
+          </div>
+          <div id="container2" class="drop-container">
+            <h2>Droppable Area</h2>
+            <div id="add-items-message">Add Items here</div>
+            <div id="success-message">Item Dragged Sucsessfully!</div>
+          </div>
+        </div>
+        <button id="reset-button">Reset</button>
+        <script src="script.js"></script>
+      </body>
+    </html>
+  </body>
 </html>
