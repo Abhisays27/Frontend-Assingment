@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Montserrat:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+    
+}
+
+
+nav {
+    background-color: #272424;
+    color: #fff;
+    height: 40px;
+  }
+
+  nav h1 {
+    margin-left: 18px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: 'Baloo Bhaina 2', cursive;
+  }
+  
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+
+    
+  }
+  #container1{
+    height: 60vh;
+    
+  
+   
+
+  }
+  #container2{
+    height: 60vh;
+   
+  
+
+  }
+  .space{
+    padding: 10px;
+  }
+  .drop-container {
+    width: 200px;
+    padding: 10px;
+    
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 30px;
+    outline: 2px dashed #aaa;
+    transition: border-color 0.3s ease;
+  }
+  .drop-container.dragging-over {
+    border-color: #aaa;
+  }
+
+  p#text1.draggable-item{
+
+    width: 80px;
+    height: 40px;
+  }
+  
+  .draggable-item {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    margin: 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .draggable-item.dragging {
+    transform: scale(1.1);
+  }
+  
+  
+  #success-message {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: green;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+    
+  }
+  
+  
+  button {
+    margin-top: 10px;
+    
+  }
+  
+  #reset-button {
+    
+      display: block;
+      cursor: pointer;
+      margin: -15px auto;
+      font-size:15px;
+  font-family:Times New Roman;
+  width:80px;
+  height:30px;
+  border-width:1px;
+  color:#fff;
+  border-color:#599bb3;
+  font-weight:bold;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  border-bottom-left-radius:8px;
+  border-bottom-right-radius:8px;
+  box-shadow: 0px 11px 14px -7px #276873;
+  text-shadow: 0px 1px 30px #3d768a;
+  background:#2991b7;
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  #add-items-message {
+    display: block;
+    text-align: center;
+    margin-top: 96px;
+    color: green;
+    animation: bounce 1.5s infinite;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  
+  
+  h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    
+  }
+  
