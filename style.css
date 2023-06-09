@@ -13,14 +13,14 @@
 nav {
     background-color: #272424;
     color: #fff;
-    height: 40px;
+    height: 65px;
 }
 
 nav h1 {
     margin-left: 18px;
     padding: 0;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 30px;
+ line-height: 65px;
     font-family: 'Baloo Bhaina 2', cursive;
 }
 
@@ -30,29 +30,31 @@ nav h1 {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    max-width: 600px;
-    margin: 10px auto;
+    max-width: 900px;
+    margin: 90px auto;
 
 
 }
 
 #container1 {
-    height: 60vh;
-
+    height: 50vh;
+    width: 400px;
+   
 
 
 
 }
 
 #container2 {
-    height: 60vh;
+    height: 50vh;
+    width: 400px;
 
 
 
 }
 
 .space {
-    padding: 10px;
+    padding: 20px;
 }
 
 .drop-container {
@@ -62,7 +64,7 @@ nav h1 {
     border: 2px solid #ccc;
     border-radius: 5px;
     margin: 30px;
-    outline: 2px dashed #aaa;
+    outline: 4px dashed #aaa;
     transition: border-color 0.3s ease;
 }
 
@@ -72,13 +74,14 @@ nav h1 {
 
 p#text1.draggable-item {
 
-    width: 80px;
+    width: 100px;
     height: 40px;
+    font-size: 19px;
 }
 
 .draggable-item {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 100px;
     margin-bottom: 10px;
     margin: 5px;
     transition: transform 0.3s ease;
@@ -91,8 +94,8 @@ p#text1.draggable-item {
 
 
 #success-message {
-    margin-top: 10px;
-    font-size: 12px;
+    margin-top: 30px;
+    font-size: 17px;
     font-weight: 500;
     color: green;
     opacity: 0;
@@ -111,11 +114,11 @@ button {
 
     display: block;
     cursor: pointer;
-    margin: -15px auto;
-    font-size: 15px;
+    margin: -57px auto;
+    font-size: 29px;
     font-family: Times New Roman;
-    width: 80px;
-    height: 30px;
+    width: 150px;
+    height: 50px;
     border-width: 1px;
     color: #fff;
     border-color: #599bb3;
@@ -146,10 +149,10 @@ button {
 #add-items-message {
     display: block;
     text-align: center;
-    margin-top: 96px;
+    margin-top: 120px;
     color: green;
     animation: bounce 1.5s infinite;
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -160,26 +163,35 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     text-align: center;
+    font-size: 32px;
+    
 
 }
 
 /*Responsive*/
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
 
     #container1,
     #container2 {
-        margin: 30px auto;
-        height: 40vh;
+        margin: 18px auto;
+        height: 50vh;
+        width: 270px;
+        
+        
 
     }
+    .container{
+        margin: 30px auto;
+    }
+    
 
     #reset-button {
         margin-top: 20px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 610px) {
 
     #container1,
     #container2 {
@@ -187,7 +199,7 @@ h2 {
         padding: auto;
 
         width: 40%;
-        max-width: 300px;
+        max-width: 270px;
 
     }
 
@@ -202,33 +214,68 @@ h2 {
 
 
 }
+@media (max-width: 430px) {
 
-/* so that the message dosent come in larger screen */
+    #container1,
+    #container2 {
+        margin: auto;
+        padding: auto;
 
+        width: 40%;
+        max-width: 270px;
 
-@media (max-width: 940px) {
-    .mobile-instructions {
-        position: fixed;
-        top: 30px;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        text-align: center;
-        padding: 10px;
-        z-index: 9999;
-        display: block;
+    }
+    .draggable-item{
+        height: 60px;
+        width: 60px;
+    }
+    .drop-container{
+        outline: 2px dashed #aaa;
+
+    }
+    #success-message{
+        font-size: 13px;
     }
 
-    .mobile-instructions p {
-        margin: 0;
-        color: red;
-        font-family: Arial, Helvetica, sans-serif;
+    h2 {
+        font-size: 18px;
+    }
+
+    nav h1 {
+        font-size: 20px;
+    }
+    nav{
+        height:50px;
+    }
+    p{
         font-size: 15px;
     }
-}
 
-@media (min-width: 700px) {
-    .mobile-instructions {
-        display: none;
-    }
+
+
 }
+/* To make mobile instructions appear only in mobile devices */
+
+@media (max-width: 930px) {
+    .mobile-instructions {
+    
+      text-align: center;
+      margin-top: 20px;
+      font-size: 19px;
+      font: 500;
+      color: red;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+   
+  
+    .container {
+      margin-top: 40px;
+    }
+  }
+  @media (min-width: 930px) {
+    .mobile-instructions {
+      display: none;
+    }
+  }
+  
+
